@@ -1,0 +1,23 @@
+There is some ways to centralise things in css.
+For exemple: 
+
+Centralising something there is inside the box (Body>div, div>p...)
+body{
+  height: 100vh; #height to align
+}
+div{
+  display: flex; #to generate a flexbox
+  justify-content: center; #to make it horizontaly centralised
+  align-itens: center; #to make it verticaly centralised
+}
+
+But if we wana chose a specific thing and change it position just changin it style we need to use for exemple:
+body{
+  
+}
+div{
+  position: absolute; #make changes using page point of view
+  top: 50%; #distance btween top
+  left: 50%; #distance between left
+  transform; translate(-50%, -50%); #to make it really centralized
+}
